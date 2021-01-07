@@ -4,7 +4,7 @@ public class Runner {
 	
 	// 1.
 	public static void main(String[] arg) {
-		int input = 79;
+		int input = 30;
 		if(input<10 || input>99) {
 			System.out.println("Value must be between 10 and 99.");
 		} else {
@@ -15,7 +15,7 @@ public class Runner {
 			//2.
 			
 			String word = "";
-			if(input>9 && input<15 && input!=14) {
+			if(input<15 && input!=14) {
 				switch(input) {
 				case 10:
 					System.out.println("Ten");
@@ -33,20 +33,31 @@ public class Runner {
 					System.out.print("Fifteen");
 					break;
 				}
+			} else if(input<20) {
+					switch(unit) {
+					case 6:
+						word = "Six";
+					case 7:
+						word = "Seven";
+					case 8:
+						word = "Eight";
+					case 9:
+						word = "Nine";
+					default:
+						word = word + "teen";
+						System.out.println(word);
+						break;
+					}
 			} else {
 				switch(tens) {
 				case 2:
 					word = "Twenty";
-					break;
 				case 3:
 					word = "Thirty";
-					break;
 				case 4:
 					word = "Forty";
-					break;
 				case 5:
 					word = "Fifty";
-					break;
 				case 6:
 					word = "Sixty";
 				case 7:
@@ -59,6 +70,8 @@ public class Runner {
 					word = word + "-";
 				} else {
 				switch(unit) {
+				case 0:
+					System.out.println(word);
 				case 1:
 					word = word + "one";
 					System.out.println(word);
@@ -97,24 +110,15 @@ public class Runner {
 					break;	
 				}
 				}
-				switch(unit) {
-				case 6:
-					word = "Six";
-				case 7:
-					word = "Seven";
-				case 8:
-					word = "Eight";
-				case 9:
-					word = "Nine";
-				default:
-					word = word + "teen";
-					System.out.println(word);
-					break;
-					
-					
-					}
 				}
-				
 			}
 		}
-}
+	}
+
+					
+					
+					
+				
+				
+			
+
