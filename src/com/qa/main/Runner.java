@@ -4,13 +4,14 @@ public class Runner {
 	
 	// 1.
 	public static void main(String[] arg) {
-		int input = 30;
+		int input = 28;
 		if(input<10 || input>99) {
 			System.out.println("Value must be between 10 and 99.");
 		} else {
 			int tens = input/10;
 			int unit = input - tens*10;
 			System.out.println(tens + unit);
+			System.out.println(unit);
 
 			//2.
 			
@@ -46,7 +47,6 @@ public class Runner {
 					default:
 						word = word + "teen";
 						System.out.println(word);
-						break;
 					}
 			} else {
 				switch(tens) {
@@ -68,6 +68,7 @@ public class Runner {
 					word = "Ninety";
 				} if (unit>0) {
 					word = word + "-";
+					System.out.println(word);
 				} else {
 				switch(unit) {
 				case 0:
@@ -77,36 +78,36 @@ public class Runner {
 					System.out.println(word);
 					break;
 				case 2:
-					word = word + "two";
-					System.out.println(word);
+					String worda = word + "two";
+					System.out.println(worda);
 					break;
 				case 3:
-					word = word + "three";
-					System.out.println(word);
+					String wordb = word + "three";
+					System.out.println(wordb);
 					break;
 				case 4:
-					word = word + "four";
-					System.out.println(word);
+					String wordc = word + "four";
+					System.out.println(wordc);
 					break;
 				case 5:
-					word = word + "five";
-					System.out.println(word);
+					String aword = word + "five";
+					System.out.println(aword);
 					break;
 				case 6:
-					word = word + "six";
-					System.out.println(word);
+					String words = word + "six";
+					System.out.println(words);
 					break;
 				case 7:
-					word = word + "seven";
-					System.out.println(word);
+					String worde = word + "seven";
+					System.out.println(worde);
 					break;
 				case 8:
-					word = word + "eight";
-					System.out.println(word);
+					String wordr = word + "eight";
+					System.out.println(wordr);
 					break;
 				case 9:
-					word = word + "nine";
-					System.out.println(word);
+					String wordg = word + "nine";
+					System.out.println(wordg);
 					break;	
 				}
 				}
